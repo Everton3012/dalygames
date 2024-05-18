@@ -22,10 +22,9 @@ async function getDalyGame() {
 
 async function getGameData() {
   try {
-    const res = await fetch(
-      `${process.env.NEXT_API_URL}/next-api/?api=games`,
-      { next: { revalidate: 320 } }
-    );
+    const res = await fetch(`${process.env.NEXT_API_URL}/next-api/?api=games`, {
+      next: { revalidate: 320 },
+    });
 
     return res.json();
   } catch (err) {
@@ -72,14 +71,10 @@ export default async function Home() {
         </Link>
         <Input />
 
-        <h2 className="text-lg font-bold mt-8 mb-5">
-          Jogos para Conhecer
-        </h2>
+        <h2 className="text-lg font-bold mt-8 mb-5">Jogos para Conhecer</h2>
 
         <section className="grid gap-7 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {data && data.map((item) => (
-            <GameCard key={item.id} data={item} />
-          ))}
+          {data && data.map((item) => <GameCard key={item.id} data={item} />)}
         </section>
       </Container>
     </main>
