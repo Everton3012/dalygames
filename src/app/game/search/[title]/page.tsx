@@ -3,7 +3,7 @@ import { GameCard } from "@/components/GameCard";
 import { Input } from "@/components/input";
 import { GameProps } from "@/utils/types/game";
 
-async function getData(title: string) {
+async function getData(title: string): Promise<any> {
   try {
     const decodeTitle = decodeURI(title);
     const res = await fetch(
@@ -19,7 +19,7 @@ export default async function Search({
   params: { title },
 }: {
   params: { title: string };
-}) {
+}): Promise<JSX.Element> {
   const games: GameProps[] = await getData(title);
   return (
     <main className="w-full text-black">

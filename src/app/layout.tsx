@@ -17,7 +17,9 @@ export const metadata: Metadata = {
     title: "Daly Games - Descubra jogos incriveis para se divertir",
     description: "uma variedade de jogos separados e organizados",
     creator: "@Everton",
-    images: [`https://dalygames-c6owjwmmq-evertons-projects-8acea483.vercel.app`], // Must be an absolute URL
+    images: [
+      `https://dalygames-c6owjwmmq-evertons-projects-8acea483.vercel.app`,
+    ], // Must be an absolute URL
   },
   openGraph: {
     images: [

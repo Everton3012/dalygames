@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Everton - Meu perfil - Daly Games sua plataforma de jogos!",
 };
 
-export default function Profile() {
+export default function Profile(): JSX.Element {
   return (
     <main className="w-full text-black">
       <Container>

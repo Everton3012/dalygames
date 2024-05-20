@@ -75,7 +75,7 @@ export async function generateMetadata({
   }
 }
 
-async function getData(id: string) {
+async function getData(id: string): Promise<any> {
   try {
     const res = await fetch(
       `${process.env.NEXT_API_URL}/next-api/?api=game&id=${id}`,
@@ -88,7 +88,7 @@ async function getData(id: string) {
   }
 }
 
-async function getGameSorted() {
+async function getGameSorted(): Promise<any> {
   try {
     const res = await fetch(
       `${process.env.NEXT_API_URL}/next-api/?api=game_day`,
@@ -104,7 +104,7 @@ export default async function Game({
   params: { id },
 }: {
   params: { id: string };
-}) {
+}): Promise<JSX.Element> {
   const data: GameProps = await getData(id);
   const sortedGame: GameProps = await getGameSorted();
 
