@@ -6,15 +6,20 @@ import { Header } from "@/components/header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app'),
+  metadataBase: new URL(
+    "https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app"
+  ),
   title: "Daly Games - Descubra jogos incriveis para se divertir",
   description: "uma variedade de jogos separados e organizados",
   keywords: ["games", "jogos", "steam"],
   openGraph: {
-    images: [`${process.env.PROJECT_URL}/preview.png`],
+    images: [
+      `${process.env.PROJECT_URL}/preview.png`,
+      "https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase",
+    ],
   },
   twitter: {
-    images: 'https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app'
+    images: "https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app",
   },
   robots: {
     index: true,
@@ -34,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={inter.className}>
         <Header />
         {children}
