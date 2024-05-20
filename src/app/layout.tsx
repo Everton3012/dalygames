@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   openGraph: {
     images: [`${process.env.PROJECT_URL}/preview.png`],
   },
+  twitter: {
+    images: 'https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app'
+  },
   robots: {
     index: true,
     follow: true,
