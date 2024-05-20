@@ -2,7 +2,6 @@ import { Container } from "@/components/container";
 import { GameProps } from "@/utils/types/game";
 import Image from "next/image";
 import Link from "next/link";
-
 import { BsArrowRightSquare } from "react-icons/bs";
 import { Input } from "@/components/input";
 import { GameCard } from "@/components/GameCard";
