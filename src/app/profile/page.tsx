@@ -7,8 +7,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Meu perfil - Daly Games sua plataforma de jogos!",
-  description: "Everton - Meu perfil - Daly Games sua plataforma de jogos!"
-}
+  description: "Everton - Meu perfil - Daly Games sua plataforma de jogos!",
+};
 
 export default function Profile() {
   return (
