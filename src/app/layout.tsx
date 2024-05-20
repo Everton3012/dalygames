@@ -12,14 +12,18 @@ export const metadata: Metadata = {
   title: "Daly Games - Descubra jogos incriveis para se divertir",
   description: "uma variedade de jogos separados e organizados",
   keywords: ["games", "jogos", "steam"],
+  twitter: {
+    card: "summary_large_image",
+    title: "Daly Games - Descubra jogos incriveis para se divertir",
+    description: "uma variedade de jogos separados e organizados",
+    creator: "@Everton",
+    images: [`${process.env.PROJECT_URL}/preview.png`], // Must be an absolute URL
+  },
   openGraph: {
     images: [
       `${process.env.PROJECT_URL}/preview.png`,
       "https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase",
     ],
-  },
-  twitter: {
-    images: "https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app",
   },
   robots: {
     index: true,
