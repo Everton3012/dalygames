@@ -6,6 +6,9 @@ import { FavoriteCard } from "./components/favorite";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app"
+  ),
   title: "Meu perfil - Daly Games sua plataforma de jogos!",
   description: "Everton - Meu perfil - Daly Games sua plataforma de jogos!",
 };

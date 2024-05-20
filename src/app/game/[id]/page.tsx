@@ -23,6 +23,9 @@ export async function generateMetadata({
       .then((res) => res.json())
       .catch(() => {
         return {
+          metadataBase: new URL(
+            "https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app"
+          ),
           title: "Daly Games - Descubra jogos incriveis para se divertir",
           description: "uma variedade de jogos separados e organizados",
           keywords: ["games", "jogos", "steam"],
@@ -30,6 +33,9 @@ export async function generateMetadata({
       });
 
     return {
+      metadataBase: new URL(
+        "https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app"
+      ),
       title: `Daly Games - ${response.title}`,
       description: `${response.description.slice(0, 100)}...`,
       keywords: [
@@ -56,6 +62,9 @@ export async function generateMetadata({
     };
   } catch (error) {
     return {
+      metadataBase: new URL(
+        "https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app"
+      ),
       title: "Daly Games - Descubra jogos incriveis para se divertir",
       description: "uma variedade de jogos separados e organizados",
       keywords: ["games", "jogos", "steam"],
