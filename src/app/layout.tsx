@@ -6,7 +6,7 @@ import { Header } from "@/components/header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://my_url.vercel.app'),
+  metadataBase: new URL('https://dalygames-m3gof9x4h-evertons-projects-8acea483.vercel.app'),
   title: "Daly Games - Descubra jogos incriveis para se divertir",
   description: "uma variedade de jogos separados e organizados",
   keywords: ["games", "jogos", "steam"],
