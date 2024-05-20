@@ -5,8 +5,9 @@ import Link from "next/link";
 import { BsArrowRightSquare } from "react-icons/bs";
 import { Input } from "@/components/input";
 import { GameCard } from "@/components/GameCard";
+import { JSXElementConstructor } from "react";
 
-async function getDalyGame() {
+async function getDalyGame(): Promise<any> {
   try {
     const res = await fetch(
       `${process.env.NEXT_API_URL}/next-api/?api=game_day`,
@@ -19,7 +20,7 @@ async function getDalyGame() {
   }
 }
 
-async function getGameData() {
+async function getGameData(): Promise<any>  {
   try {
     const res = await fetch(`${process.env.NEXT_API_URL}/next-api/?api=games`, {
       next: { revalidate: 320 },
@@ -31,7 +32,7 @@ async function getGameData() {
   }
 }
 
-export default async function Home() {
+export default async function Home():Promise<JSX.Element> {
   const dalyGame: GameProps = await getDalyGame();
   const data: GameProps[] = await getGameData();
 
