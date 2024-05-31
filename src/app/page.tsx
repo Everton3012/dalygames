@@ -39,7 +39,7 @@ export default async function Home(): Promise<JSX.Element> {
     <main className={"w-full"}>
       <Container>
         <h1 className={"text-center font-bold text-xl mt-8 mb-5"}>
-          Separamos um hogo exclusivo para você
+          Separamos um jogo exclusivo para você
         </h1>
         <Link href={`/game/${dalyGame.id}`}>
           <section className={"w-full bg-black rounded-lg "}>
